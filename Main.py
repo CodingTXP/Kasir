@@ -6,7 +6,7 @@ pilihan = input("Pilihan: ")
 
 if pilihan == "a" or pilihan == "A":
     nama_barang = input("Ketikkan nama barang: ") + "\n"
-    harga_barang = float(input("Ketikkan harga barang: ")) + "\n"
+    harga_barang = input("Ketikkan harga barang: ") + "\n"
     with open("namaBarang.txt", 'a', encoding="utf-8") as file:
         file.write(nama_barang)
     with open("hargaBarang.txt", 'a', encoding="utf-8") as file:
